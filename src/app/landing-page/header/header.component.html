@@ -1,0 +1,13 @@
+<a routerLink="#top">Scroll down</a>
+<div class="language">
+    <p  (click)="translate.switchLanguage('en')">EN</p>
+    <p  (click)="translate.switchLanguage('de')">DE</p>
+</div>
+
+<header class="header">
+
+    <h1>{{'frontend' | translate }}</h1>
+    <h1>{{'developer' | translate}}</h1>
+
+    <span>{{'read' | translate }} <a href="#">{{'privacy' | translate }}</a></span>
+</header>
