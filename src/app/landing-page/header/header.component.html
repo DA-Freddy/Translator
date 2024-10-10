@@ -1,4 +1,3 @@
-<a routerLink="#top">Scroll down</a>
 <div class="language">
     <p  (click)="translate.switchLanguage('en')">EN</p>
     <p  (click)="translate.switchLanguage('de')">DE</p>
@@ -7,7 +6,10 @@
 <header class="header">
 
     <h1>{{'frontend' | translate }}</h1>
-    <h1>{{'developer' | translate}}</h1>
 
-    <span>{{'read' | translate }} <a href="#">{{'privacy' | translate }}</a></span>
+
+    <span>{{'read' | translate }}</span> <a href="#">{{'privacy' | translate }}</a><span>{{'more' | translate }}</span>
+    <br>
+    <span [innerHTML]="'full' | translate"></span>
+
 </header>
